@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Something For You ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+
+  <!-- PASSWORD SCREEN -->
+  <main id="lockScreen" class="screen lock-screen">
+    <div class="lock-paper paper">
+      <div class="tiny-label">A LITTLE BIRTHDAY SECRET</div>
+      <h1>17 gifts.<br><em>One little wish.</em></h1>
+      <p class="intro">You have the letters. Now put them together.</p>
+
+      <div class="letter-slots" id="letterSlots" aria-label="17 letter password">
+        <input maxlength="1" aria-label="Letter 1">
+        <input maxlength="1" aria-label="Letter 2">
+        <input maxlength="1" aria-label="Letter 3">
+        <input maxlength="1" aria-label="Letter 4">
+        <input maxlength="1" aria-label="Letter 5">
+        <input maxlength="1" aria-label="Letter 6">
+        <input maxlength="1" aria-label="Letter 7">
+        <input maxlength="1" aria-label="Letter 8">
+        <input maxlength="1" aria-label="Letter 9">
+        <input maxlength="1" aria-label="Letter 10">
+        <input maxlength="1" aria-label="Letter 11">
+        <input maxlength="1" aria-label="Letter 12">
+        <input maxlength="1" aria-label="Letter 13">
+        <input maxlength="1" aria-label="Letter 14">
+        <input maxlength="1" aria-label="Letter 15">
+        <input maxlength="1" aria-label="Letter 16">
+        <input maxlength="1" aria-label="Letter 17">
+      </div>
+
+      <p class="hint">Hint: the letters describe you</p>
+
+      <button id="unlockBtn" class="paper-btn">UNLOCK ♡</button>
+      <p id="errorMsg" class="error"></p>
+
+      <div class="stamp">17<br><span>♡</span></div>
+      <div class="scribble scribble-one">for you</div>
+      <div class="scribble scribble-two">open carefully</div>
+    </div>
+  </main>
+
+  <!-- WEBSITE -->
+  <div id="site" class="site hidden">
+    <header class="topbar">
+      <span>FOR MY PARUU  ♡</span>
+      <span>2026</span>
+    </header>
+
+    <section class="hero section burgundy">
+      <div class="hero-copy">
+        <div class="tiny-label light">A VERY IMPORTANT DAY</div>
+        <h2>Happy Birthday,<br><em>my love.</em></h2>
+        <p>So I made you a tiny corner of the internet.</p>
+        <button class="scroll-btn" data-target="memories">KEEP READING ↓</button>
+      </div>
+      <div class="hero-photo polaroid rotate-left">
+        <div class="photo-frame">
+          <img src="assets/photo1.jpg" alt="Your favourite photo">
+          <div class="photo-placeholder">YOUR PHOTO</div>
+        </div>
+        <p>Most Beautiful Girl on the planet!!</p>
+      </div>
+      <div class="tape tape-top"></div>
+      <div class="star star-a">✦</div>
+      <div class="star star-b">✧</div>
+    </section>
+
+    <section id="memories" class="section cream">
+      <div class="section-heading">
+        <span class="number">01</span>
+        <div>
+          <div class="tiny-label">THE GOOD STUFF</div>
+          <h3>One of my favourite moments</h3>
+        </div>
+      </div>
+
+      <div class="memory-board">
+        <div class="polaroid memory m1 rotate-left">
+          <div class="photo-frame">
+            <img src="assets/photo2.jpg" alt="">
+            <div class="photo-placeholder">PHOTO</div>
+          </div>
+          <p>that day ♡</p>
+        </div>
+        <div class="polaroid memory m2 rotate-right">
+          <div class="photo-frame">
+            <img src="assets/photo3.jpg" alt="">
+            <div class="photo-placeholder">PHOTO</div>
+          </div>
+          <p>still makes me smile</p>
+        </div>
+        <div class="polaroid memory m3 rotate-left">
+          <div class="photo-frame">
+            <img src="assets/photo4.jpg" alt="">
+            <div class="photo-placeholder">PHOTO</div>
+          </div>
+          <p>you + me</p>
+        </div>
+        <div class="memory-note">I could probably fill this whole website with memories, but these will do for now.</div>
+      </div>
+    </section>
+
+    <section class="section burgundy">
+      <div class="section-heading light-heading">
+        <span class="number">02</span>
+        <div>
+          <div class="tiny-label light">THINGS I NOTICE</div>
+          <h3>The cute little things you do that make my day!</h3>
+        </div>
+      </div>
+
+      <div class="little-grid">
+        <article class="little-card">
+          <span>✦</span>
+          <h4>The way you laugh is so cute ofc!</h4>
+          <p>Especially when you know you're being paglii.</p>
+        </article>
+        <article class="little-card offset">
+          <span>♡</span>
+          <h4>Your "Hi babyyy"</h4>
+          <p>The one sentence that makes my life go wuhooo.</p>
+        </article>
+        <article class="little-card">
+          <span>✧</span>
+          <h4>When you remember tiny things</h4>
+          <p>When you rememebr maine khana nahi khaya and you get food!</p>
+        </article>
+        <article class="little-card offset">
+          <span>★</span>
+          <h4>Just... you</h4>
+          <p>I don't think I need a better explanation than that.</p>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- 04 REASONS I LOVE YOU -->
+    <section class="section cream reasons-section">
+      <div class="section-heading">
+        <span class="number">03</span>
+        <div>
+          <div class="tiny-label">A FEW REASONS</div>
+          <h3>Reasons I Love You</h3>
+        </div>
+      </div>
+      <div class="reasons-board">
+        <article class="reason reason-a"><span>01</span><h4>Your smile</h4><p>Because somehow it can make even a completely normal day feel better.</p></article>
+        <article class="reason reason-b"><span>02</span><h4>Your hugs</h4><p>My favourite place to be, even if I don't say it every time.</p></article>
+        <article class="reason reason-c"><span>03</span><h4>Your understanding</h4><p>For putting up with me, my nonsense and all my random blah blah.</p></article>
+        <article class="reason reason-d"><span>04</span><h4>The way you care</h4><p>You notice things. You remember things. You make people feel loved.</p></article>
+      </div>
+      <p class="hand reasons-footer">and honestly... I have 1lakh more reasons♡</p>
+    </section>
+
+    <!-- 05 OUR TIMELINE -->
+    <section class="section burgundy timeline-section">
+      <div class="section-heading light-heading">
+        <span class="number">04</span>
+        <div>
+          <div class="tiny-label light">OUR LITTLE TIMELINE</div>
+          <h3>Some moments worth keeping</h3>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-dot">♡</div><div class="timeline-date">THE BEGINNING</div><h4>That thursday night</h4><p>Oh my god! i cant even forget that night that night when i was twisting things just so you could say it first.. tho i said but haa.. that was one of the best decisions of my life.. 10/10 fruendship ruining would do it all over again!!</p></div>
+        <div class="timeline-item"><div class="timeline-dot">✦</div><div class="timeline-date">ONE OF THOSE DAYS</div><h4>The day I knew</h4><p>That day idts you remember but one day you got that vrat me apple n all for me OMG how to even tell how that made me feel so special.. you getting food for me out of the way jake!! mar do mujheeeee and that day roke wala din jab we were doing chutiyap just so we could spend time with each other?</p></div>
+        <div class="timeline-item"><div class="timeline-dot">★</div><div class="timeline-date">RIGHT NOW</div><h4>Us, today</h4><p>And somehow there are still so many memories left to make and a forever amount of days to spend together!</p></div>
+      </div>
+    </section>
+
+    <!-- 06 A LITTLE PROMISE -->
+    <section class="section burgundy promise-section">
+      <div class="promise-card">
+        <div class="tiny-label light">ONE LAST THING</div>
+        <h3>A little promise.</h3>
+        <p>I can't promise that every day will be perfect, but I can promise that ill keep making memories with you, keep loving you just the way you want, ofc we will fight ofc ill get anrgy ofc we will make each other sad but i promise no no i make pinki promise that i will never ever give up on you THE Love Of My Life... and keep finding reasons to make you smile.</p>
+        <p class="hand">more birthdays. more memories. more us. ♡</p>
+      </div>
+    </section>
+
+    <section class="section cream song-section">
+      <div class="vinyl-wrap">
+        <button id="vinyl" class="vinyl" aria-label="Play birthday song">
+          <span class="vinyl-label">CLICK<br>IDHAR</span>
+          <span class="vinyl-hole"></span>
+        </button>
+        <div class="needle"></div>
+      </div>
+      <div class="song-copy">
+  <div class="tiny-label">PRESS PLAY</div>
+
+  <h3>This song reminds me of you.</h3>
+
+  <p><strong>Click the record ♡</strong></p>
+
+  <p class="hand">this will always be our song!!♡</p>
+
+  <div class="lyrics">
+    <div class="lyrics-label">♡ A LITTLE PART OF OUR SONG ♡</div>
+
+    <div class="lyrics-lines">
+      <p class="lyric-line" data-time="0">I like shiny things, but I'd marry you with paper rings</p>
+      <p class="lyric-line" data-time="3.95">Uh huh, that's right</p>
+      <p class="lyric-line" data-time="5.85">Darling, you're the one I want, and</p>
+      <p class="lyric-line" data-time="8.65">I hate accidents except when we went from friends to this</p>
+      <p class="lyric-line" data-time="13.25">Uh huh, that's right</p>
+      <p class="lyric-line" data-time="15.15">Darling, you're the one I want</p>
+    </div>
+  </div>
+
+  <audio id="song" src="assets/song.mp3"></audio>
+</div>
+    </section>
+
+    <section class="section cream letter-section">
+      <div class="envelope" id="envelope">
+        <div class="envelope-back"></div>
+        <div class="letter-paper">
+          <div class="tiny-label">A LETTER FOR YOU</div>
+          <h3>Hi Babyyy!! </h3>
+          <p>
+            Happiest Birthday to my most cutiee most beautiful in the world  to my girlfriend.. Happy Birthday Paruu..
+          </p>
+          <p>
+            Thank you for all the little moments, the laughs, the conversations,
+            the chaos,the gussa , the daant and everything in between. You make my ordinary life feel
+            roantic and amazingg
+          </p>
+          <p>
+            I hope this birthday is as lovely as you are, and I hope you know
+            just how special you are to me. i hope with all this i could make your favourite day more special....
+          </p>
+          <p class="hand signoff">Happy Birthday, my paruu ♡</p>
+        </div>
+        <div class="envelope-front"></div>
+        <div class="envelope-flap"></div>
+        <button class="envelope-btn">OPEN MY LETTER</button>
+      </div>
+    </section>
+
+    <section class="final-section burgundy">
+      <div class="tiny-label light">17 / 17</div>
+      <h2>And those were my small<br><em>birthday gifts to you.</em></h2>
+      <div class="final-photo polaroid">
+        <div class="photo-frame">
+          <img src="assets/photo5.jpg" alt="">
+          <div class="photo-placeholder">MY FAVOURITE PHOTO</div>
+        </div>
+        <p>happy birthday ♡</p>
+      </div>
+      <p class="footer-note">for youu by ofc paru ka akshayy</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
