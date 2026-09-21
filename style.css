@@ -9,7 +9,7 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--in
 .stamp{position:absolute;right:8%;top:12%;width:76px;height:76px;border:2px solid var(--wine);border-radius:50%;display:grid;place-items:center;text-align:center;color:var(--wine);font:700 17px "Cormorant Garamond",serif;transform:rotate(12deg)}.scribble{position:absolute;font:20px "Patrick Hand",cursive;color:var(--wine)}.scribble-one{right:9%;bottom:15%;transform:rotate(-8deg)}.scribble-two{left:7%;bottom:8%;transform:rotate(3deg)}
 .site{overflow:hidden}.topbar{height:42px;padding:0 5vw;display:flex;justify-content:space-between;align-items:center;background:var(--dark);color:#e9d9cb;font-size:9px;letter-spacing:.18em}.section{position:relative;padding:clamp(70px,9vw,130px) 8vw}.burgundy{background:radial-gradient(circle at 15% 30%,rgba(255,255,255,.035),transparent 28%),var(--wine);color:#f5e8da}.cream{background:var(--cream);color:var(--ink)}
 .hero{min-height:calc(100svh - 42px);display:flex;align-items:center;justify-content:center;gap:clamp(40px,9vw,130px)}.hero-copy{max-width:560px}.hero h2{font-size:clamp(65px,9vw,125px);line-height:.78;margin:22px 0 30px}.hero-copy>p{max-width:340px;font-family:"Cormorant Garamond",serif;font-size:22px;color:#dfcfc1}.scroll-btn{border:0;border-bottom:1px solid #dfcfc1;background:none;color:#f5e8da;padding:8px 0;font-size:10px;letter-spacing:.15em;cursor:pointer}
-.polaroid{background:#f7f0e5;padding:13px 13px 20px;color:var(--ink);box-shadow:0 18px 35px rgba(0,0,0,.2)}.hero-photo{width:min(330px,40vw)}.photo-frame{position:relative;aspect-ratio:4/5;background:#d9cec0;overflow:hidden}.photo-frame img{width:100%;height:100%;display:block;object-fit:cover}.photo-placeholder{position:absolute;inset:0;display:grid;place-items:center;font-size:10px;letter-spacing:.14em;color:#887a70;background:#ded3c4}.polaroid p{margin:10px 3px 0;font:17px "Patrick Hand",cursive}.rotate-left{transform:rotate(-4deg)}.rotate-right{transform:rotate(3deg)}
+.polaroid{background:#f7f0e5;padding:13px 13px 20px;color:var(--ink);box-shadow:0 18px 35px rgba(0,0,0,.2)}.hero-photo{width:min(330px,40vw)}.photo-frame{position:relative;aspect-ratio:4/5;background:#d9cec0;overflow:hidden}.photo-frame img{width:100%;height:100%;display:block;object-fit:cover}.photo-placeholder{display:none}.polaroid p{margin:10px 3px 0;font:17px "Patrick Hand",cursive}.rotate-left{transform:rotate(-4deg)}.rotate-right{transform:rotate(3deg)}
 .tape{position:absolute;width:120px;height:35px;background:rgba(224,190,160,.72);opacity:.75}.tape-top{top:9%;right:20%;transform:rotate(10deg)}.star{position:absolute;font-size:34px;color:#d5aaa0}.star-a{left:8%;bottom:12%}.star-b{right:8%;top:20%}
 .section-heading{max-width:800px;margin:0 auto 70px;display:flex;align-items:flex-start;gap:25px}.section-heading .number{font:16px "Patrick Hand",cursive;color:var(--wine);padding-top:10px}.light-heading .number{color:#d8a7a5}.section-heading h3{font-size:clamp(45px,6vw,75px);line-height:.9;margin:12px 0 0}
 .memory-board{min-height:600px;max-width:1000px;margin:auto;position:relative}.memory{position:absolute;width:min(260px,28vw)}.m1{left:6%;top:0}.m2{left:37%;top:80px;z-index:2}.m3{right:6%;top:15px}.memory-note{position:absolute;left:32%;top:420px;width:300px;font:23px "Patrick Hand",cursive;color:var(--wine);transform:rotate(-3deg)}
@@ -31,9 +31,11 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--in
   max-width: 1080px;
   overflow: visible;
 }
+
 .memory {
   width: min(270px, 26vw);
 }
+
 .m1 { left: 4%; top: 30px; }
 .m2 { left: 37%; top: 110px; z-index: 2; }
 .m3 { right: 4%; top: 35px; }
@@ -54,12 +56,14 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--in
   justify-content: center;
   align-items: start;
 }
+
 .reason {
   position: relative;
   width: auto;
   min-height: 220px;
   padding: 34px;
 }
+
 .reason-a { left:auto; top:auto; transform:rotate(-3deg); }
 .reason-b { left:auto; top:auto; transform:rotate(2deg); margin-top:45px; }
 .reason-c { right:auto; top:auto; transform:rotate(3deg); }
@@ -74,6 +78,7 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--in
 .envelope {
   overflow: visible;
 }
+
 .letter-paper {
   opacity: 0;
   transform: translateY(65px);
@@ -81,6 +86,7 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--in
     transform 1s cubic-bezier(.2,.7,.2,1),
     opacity .35s ease;
 }
+
 .envelope.open .letter-paper {
   opacity: 1;
   transform: translateY(-255px);
@@ -88,9 +94,11 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--in
     transform 1s cubic-bezier(.2,.7,.2,1),
     opacity .35s ease .15s;
 }
+
 .envelope.open .envelope-front {
   z-index: 3;
 }
+
 .envelope.open .envelope-flap {
   z-index: 1;
 }
@@ -108,9 +116,11 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--in
     min-height: 780px;
     width: 100%;
   }
+
   .memory {
     width: min(205px, 55vw);
   }
+
   .m1 { left: 0; top: 15px; }
   .m2 { left: 24%; top: 190px; }
   .m3 { right: 0; top: 365px; }
@@ -129,12 +139,14 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--in
     min-height: 0;
     align-items: center;
   }
+
   .reason {
     width: min(310px, 82vw);
     min-height: 190px;
     margin: 0 0 28px !important;
     padding: 28px;
   }
+
   .reason-a { transform: rotate(-2deg); }
   .reason-b { transform: rotate(2deg); }
   .reason-c { transform: rotate(-1.5deg); }
@@ -152,21 +164,25 @@ html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--in
     padding-top: 70px;
     padding-bottom: 100px;
   }
+
   .letter-paper {
     width: 88%;
     left: 6%;
     min-height: 390px;
     padding: 28px;
   }
+
   .envelope {
     width: 92vw;
     height: 330px;
   }
+
   .envelope-flap {
     border-left-width: 46vw;
     border-right-width: 46vw;
     border-top-width: 165px;
   }
+
   .envelope-back:before { border-width: 0 0 330px 46vw; }
   .envelope-back:after { border-width: 330px 46vw 0 0; }
   .envelope.open .letter-paper {
