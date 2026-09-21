@@ -1,4 +1,4 @@
-const SECRET_CODE = "HAPPYBIRTHDAYLOVE";
+const SECRET_CODE = "AKSHAYKIRIDDHIMA";
 
 const lockScreen = document.getElementById("lockScreen");
 const site = document.getElementById("site");
